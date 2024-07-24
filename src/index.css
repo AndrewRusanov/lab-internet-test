@@ -1,1 +1,21 @@
 @import url(../src/assets/fonts/graphikLCG.css);
+
+:root {
+  --primary: #2a6cea;
+  --black: #000;
+  --dark-gray: #5e646a;
+  --gray: #83898f;
+  --mid-gray: #c2c8cd;
+  --light-gray: #eceff2;
+  --extra-light-gray: #f6f8fa;
+  --white: #fff;
+  --dangerous: #f13636;
+  --green-success: #25cd82;
+  --primary-hover: #397dff;
+  --primary-disabled: #abcae6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
