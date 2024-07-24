@@ -11,6 +11,7 @@ export default defineConfig({
       store: "/src/store",
       types: "/src/types",
       assets: "/src/assets",
+      UI: "/src/UI",
     },
   },
 });

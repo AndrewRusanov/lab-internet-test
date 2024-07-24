@@ -1,5 +1,5 @@
 export type NavBarItem = {
-  [key in string]: string;
+  [key in navBarItems]: string;
 };
 
 export enum navBarItems {
