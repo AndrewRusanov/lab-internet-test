@@ -1,3 +1,4 @@
+import Slider from "./components/Slider";
 import styles from "./Reviews.module.css";
 
 const Reviews = () => {
@@ -5,6 +6,7 @@ const Reviews = () => {
     <section className={styles.background}>
       <div className={styles.container}>
         <h2 className={styles.title}>Отзывы</h2>
+        <Slider />
       </div>
     </section>
   );
