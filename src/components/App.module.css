@@ -9,3 +9,21 @@
   max-width: 1920px;
   position: relative;
 }
+
+@media screen and (max-width: 1919px) {
+  .main {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    max-width: 375px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .main {
+    max-width: 320px;
+  }
+}
