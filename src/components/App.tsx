@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import Start from "./components/Start";
+import Start from "./Start";
 
 import styles from "./App.module.css";
 
