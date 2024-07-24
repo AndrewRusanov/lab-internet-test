@@ -1,8 +1,8 @@
 import { useState } from "react";
 import classNames from "classnames";
 
-import logo from "../../../assets/images/logoHeader.svg";
-import { navBarList } from "../../../data/constants";
+import logo from "../../../../../assets/images/logoHeader.svg";
+import { navBarList } from "../../../../../data/constants";
 
 import styles from "./Header.module.css";
 
