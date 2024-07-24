@@ -1,13 +1,13 @@
 import { useState } from "react";
 import classNames from "classnames";
 
-import logo from "../../../assets/images/mainBackground.png";
+import logo from "../../../assets/images/logoHeader.svg";
 import { navBarList } from "../../../data/constants";
 
 import styles from "./Header.module.css";
 
 const Header = () => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   const handleTabClick = () => {
     setIsActive((prev) => !prev);
