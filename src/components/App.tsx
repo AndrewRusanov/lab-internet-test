@@ -2,10 +2,11 @@ import { FC } from "react";
 
 import Start from "./Start";
 import Header from "./Header";
-
-import styles from "./App.module.css";
 import HowItWorks from "./HowItWorks";
 import ThirdBlock from "./ThirdBlock";
+import Reviews from "./Reviews";
+
+import styles from "./App.module.css";
 
 const App: FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: FC = () => {
       <Start />
       <HowItWorks />
       <ThirdBlock />
+      <Reviews />
     </main>
   );
 };
