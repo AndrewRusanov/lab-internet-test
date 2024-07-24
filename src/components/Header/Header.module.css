@@ -1,10 +1,10 @@
 .header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: calc(50% - 1920px / 2);
   z-index: 2;
   height: 80px;
-  width: 100%;
+  width: 1920px;
   transition: 0.3s ease-in;
   display: flex;
   align-items: center;
@@ -17,10 +17,10 @@
   background-color: var(--primary);
   position: fixed;
   top: 0;
-  left: 0;
+  left: calc(50% - 1920px / 2);
   z-index: 2;
   height: 80px;
-  width: 100%;
+  width: 1920px;
   transition: 0.3s ease-in;
   display: flex;
   align-items: center;
