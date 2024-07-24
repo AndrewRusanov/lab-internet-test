@@ -1,6 +1,6 @@
 .start {
-  background: url(assets/images/mainBackground.png) no-repeat center
-    center/cover;
+  background: url(assets/images/mainBackground.png) no-repeat center center;
+  background-size: cover;
   width: 100%;
   height: 960px;
   position: relative;
@@ -24,4 +24,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 1919px) {
+  .start {
+    height: 1024px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .start {
+    height: 596px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .start {
+    height: 509px;
+  }
 }

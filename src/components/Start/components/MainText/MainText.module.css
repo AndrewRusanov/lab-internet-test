@@ -11,6 +11,7 @@
 .title {
   font-size: 52px;
   line-height: 64px;
+  font-weight: 700;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -43,4 +44,46 @@
   border: 1px solid var(--mid-gray);
   background-color: white;
   padding: 18px 38px;
+}
+
+@media screen and (max-width: 1919px) {
+  .mainText {
+    max-width: 476px;
+    margin: 398px auto;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .article {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 17px 0 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainText {
+    max-width: 288px;
+    margin: 172px auto;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .article {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 10px 0 26px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .mainText {
+    margin: 128px auto;
+  }
 }
