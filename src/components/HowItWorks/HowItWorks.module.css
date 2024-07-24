@@ -70,7 +70,7 @@
   }
 
   .infoList {
-    margin: 42px 0 80px;
+    margin: 42px 0 0;
     gap: 32px 34px;
     flex-wrap: wrap;
   }
