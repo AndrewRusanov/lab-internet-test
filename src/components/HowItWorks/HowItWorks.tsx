@@ -10,8 +10,10 @@ const HowItWorks = () => {
         {HowItWorksList.map((item, index) => (
           <li key={index} className={styles.infoItem}>
             <span className={styles.infoIcon}>{item.icon}</span>
-            <h6 className={styles.infoTitle}>{item.title}</h6>
-            <p className={styles.infoDescription}>{item.description}</p>
+            <div className={styles.infoWrapper}>
+              <h6 className={styles.infoTitle}>{item.title}</h6>
+              <p className={styles.infoDescription}>{item.description}</p>
+            </div>
           </li>
         ))}
       </ul>

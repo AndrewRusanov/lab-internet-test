@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin: 61px 0 80px;
+  margin: 61px 0 0;
   gap: 32px;
 }
 
@@ -30,9 +30,18 @@
   flex-direction: column;
 }
 
-.infoIcon {
+.infoWrapper {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+}
+
+.infoIcon > svg {
   width: 72px;
   height: 72px;
+}
+
+.infoIcon {
   margin-bottom: 16px;
 }
 
@@ -52,4 +61,67 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1919px) {
+  .container {
+    max-width: 718px;
+    margin: 56px auto;
+  }
+
+  .infoList {
+    margin: 42px 0 80px;
+    gap: 32px 34px;
+    flex-wrap: wrap;
+  }
+
+  .infoItem {
+    max-width: 342px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .infoIcon > svg {
+    width: 56px;
+    height: 56px;
+  }
+
+  .infoIcon {
+    margin-bottom: 0;
+  }
+
+  .infoWrapper {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 342px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .infoList {
+    margin: 26px 0 0;
+    gap: 32px;
+  }
+
+  .infoItem {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .container {
+    max-width: 288px;
+  }
+
+  .infoWrapper {
+    width: 216px;
+  }
 }
