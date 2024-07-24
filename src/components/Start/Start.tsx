@@ -1,4 +1,5 @@
-import Header from "./components/Header";
+import MainText from "./components/MainText";
+
 import styles from "./Start.module.css";
 
 const Start = () => {
@@ -6,7 +7,7 @@ const Start = () => {
     <section className={styles.start}>
       <div className={styles.overlay} />
       <div className={styles.content}>
-        <Header />
+        <MainText />
       </div>
     </section>
   );
