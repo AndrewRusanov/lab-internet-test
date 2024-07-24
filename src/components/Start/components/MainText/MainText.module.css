@@ -1,5 +1,4 @@
 .mainText {
-  border: 1px solid var(--dangerous);
   max-width: 748px;
   display: flex;
   flex-direction: column;
