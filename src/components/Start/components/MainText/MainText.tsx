@@ -9,7 +9,9 @@ const MainText = () => {
       <p className={styles.article}>
         Сделай круто тестовое задание и у тебя получится
       </p>
-      <button>Проще простого!</button>
+      <button type="button" className={styles.button}>
+        Проще простого!
+      </button>
     </div>
   );
 };
