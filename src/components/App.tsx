@@ -5,6 +5,7 @@ import Header from "./Header";
 import HowItWorks from "./HowItWorks";
 import ThirdBlock from "./ThirdBlock";
 import Reviews from "./Reviews";
+import InfoBlock from "./InfoBlock";
 
 import styles from "./App.module.css";
 
@@ -16,6 +17,7 @@ const App: FC = () => {
       <HowItWorks />
       <ThirdBlock />
       <Reviews />
+      <InfoBlock />
     </main>
   );
 };
