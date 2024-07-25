@@ -6,6 +6,7 @@ import HowItWorks from "./HowItWorks";
 import ThirdBlock from "./ThirdBlock";
 import Reviews from "./Reviews";
 import InfoBlock from "./InfoBlock";
+import Form from "./Form";
 
 import styles from "./App.module.css";
 
@@ -18,6 +19,7 @@ const App: FC = () => {
       <ThirdBlock />
       <Reviews />
       <InfoBlock />
+      <Form />
     </main>
   );
 };
