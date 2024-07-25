@@ -8,7 +8,7 @@ import InfoBlock from "./InfoBlock";
 import Form from "./Form";
 import Footer from "./Footer";
 import Reviews from "./Reviews/Reviews";
-
+import QA from "./QA";
 
 import styles from "./App.module.css";
 
@@ -20,6 +20,7 @@ const App: FC = () => {
       <HowItWorks />
       <ThirdBlock />
       <Reviews />
+      <QA />
       <InfoBlock />
       <Form />
       <Footer />

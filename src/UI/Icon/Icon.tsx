@@ -6,6 +6,8 @@ const DeliveryTruck = lazy(() => import("./components/DeliveryTruck"));
 const Secure = lazy(() => import("./components/Secure"));
 const MoneyBags = lazy(() => import("./components/MoneyBags"));
 const DefaultUser = lazy(() => import("./components/DefaultUser"));
+const Plus = lazy(() => import("./components/Plus"));
+const Cross = lazy(() => import("./components/Cross"));
 
 const IconWrapper: FC<PropsWithChildren<unknown>> = (props) => (
   <Suspense fallback={<Loader isSmall />}>{props.children}</Suspense>
@@ -35,6 +37,16 @@ const Icon = {
   DefaultUser: () => (
     <IconWrapper>
       <DefaultUser />
+    </IconWrapper>
+  ),
+  Plus: () => (
+    <IconWrapper>
+      <Plus />
+    </IconWrapper>
+  ),
+  Cross: () => (
+    <IconWrapper>
+      <Cross />
     </IconWrapper>
   ),
 };
