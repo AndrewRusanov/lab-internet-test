@@ -7,6 +7,7 @@ import ThirdBlock from "./ThirdBlock";
 import Reviews from "./Reviews";
 import InfoBlock from "./InfoBlock";
 import Form from "./Form";
+import Footer from "./Footer";
 
 import styles from "./App.module.css";
 
@@ -20,6 +21,7 @@ const App: FC = () => {
       <Reviews />
       <InfoBlock />
       <Form />
+      <Footer />
     </main>
   );
 };
