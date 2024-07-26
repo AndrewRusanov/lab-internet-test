@@ -27,7 +27,6 @@ const Form: FC = () => {
   });
 
   const submit: SubmitHandler<TForm> = (data) => {
-    //TODO: Сделать отправку на почту
     console.log("Данные с формы", data);
     reset;
   };
@@ -36,7 +35,6 @@ const Form: FC = () => {
     setIsChecked((prev) => !prev);
   };
 
-  //  TODO: Провести рефакторинг стилей и подхода к вёрстке. Проверить адаптив
   return (
     <section className="container" id="form">
       <h2 className="title">Отправь форму</h2>
