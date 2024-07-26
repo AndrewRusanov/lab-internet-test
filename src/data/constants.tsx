@@ -2,6 +2,7 @@ import { howItWorksItem } from "types/howItWorksTypes";
 import { InfoBlockItem } from "types/infoBlockTypes";
 import { QuastionAnswer } from "types/QATypes";
 import { ReviewItem } from "types/reviewsTypes";
+import { NavBarLink } from "types/startTypes";
 import Icon from "UI/Icon";
 
 export const navBarList = [
@@ -9,6 +10,13 @@ export const navBarList = [
   { text: "3-й блок" },
   { text: "Вопросы и ответы" },
   { text: "Форма" },
+];
+
+export const NavBarLinks: NavBarLink[] = [
+  { id: "howItWorks", text: "Как это работает" },
+  { id: "thirdBlock", text: "Третий блок" },
+  { id: "QA", text: "Вопросы и ответы" },
+  { id: "form", text: "Форма" },
 ];
 
 export const HowItWorksList: howItWorksItem[] = [

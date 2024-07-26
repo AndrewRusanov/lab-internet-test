@@ -7,7 +7,8 @@ import burgerMenu from "assets/images/burgerMenu.svg";
 import crossBtn from "assets/images/crossBtn.svg";
 import arrowRightMenu from "assets/images/arrowRightMenu.svg";
 
-import { navBarList } from "data/constants";
+import { NavBarLinks } from "data/constants";
+import { scrollToComponent } from "utils/scrollToComponent";
 
 import styles from "./Header.module.css";
 
@@ -52,8 +53,12 @@ const Header = () => {
       <img src={logo} alt="Логотип проекта" className={styles.logo} />
       <nav className={styles.desktopNavigation}>
         <ul className={styles.navigationList}>
-          {navBarList.map((item, index) => (
-            <li key={index} className={styles.navigationItem}>
+          {NavBarLinks.map((item, index) => (
+            <li
+              key={index}
+              className={styles.navigationItem}
+              onClick={() => scrollToComponent(item.id, setIsMenuOpen)}
+            >
               {item.text}
             </li>
           ))}
@@ -87,8 +92,12 @@ const Header = () => {
             </button>
           </div>
           <ul className={styles.menuList}>
-            {navBarList.map((item, index) => (
-              <li key={index} className={styles.menuItem}>
+            {NavBarLinks.map((item, index) => (
+              <li
+                key={index}
+                className={styles.menuItem}
+                onClick={() => scrollToComponent(item.id, setIsMenuOpen)}
+              >
                 <span className={styles.menuItemText}>{item.text}</span>
                 <img src={arrowRightMenu} alt="Переход к разделу" />
               </li>

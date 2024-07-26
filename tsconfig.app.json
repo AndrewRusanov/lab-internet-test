@@ -23,7 +23,8 @@
       "store/*": ["store/*"],
       "types/*": ["types/*"],
       "assets/*": ["assets/*"],
-      "UI/*": ["UI/*"]
+      "UI/*": ["UI/*"],
+      "utils/*": ["utils/*"]
     },
 
     /* Linting */

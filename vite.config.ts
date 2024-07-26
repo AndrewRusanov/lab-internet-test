@@ -12,6 +12,7 @@ export default defineConfig({
       types: "/src/types",
       assets: "/src/assets",
       UI: "/src/UI",
+      utils: "/src/utils",
     },
   },
 });

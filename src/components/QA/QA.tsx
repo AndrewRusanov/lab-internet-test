@@ -15,7 +15,7 @@ const QA = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="QA">
       <h2 className={styles.title}>Вопросы и ответы</h2>
 
       {QAList.map((item, index) => (

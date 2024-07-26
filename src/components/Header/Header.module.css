@@ -56,6 +56,7 @@
 
 .navigationItem:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .laptopNavigation {
@@ -121,6 +122,10 @@
 
 .menuItem:last-of-type {
   border-bottom: 1px solid var(--light-gray);
+}
+
+.menuItem:hover {
+  cursor: pointer;
 }
 
 .menuItemText {

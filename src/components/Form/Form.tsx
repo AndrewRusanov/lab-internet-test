@@ -37,7 +37,7 @@ const Form: FC = () => {
 
   //  TODO: Провести рефакторинг стилей и подхода к вёрстке. Проверить адаптив
   return (
-    <section className="container">
+    <section className="container" id="form">
       <h2 className="title">Отправь форму</h2>
       <form className="form" onSubmit={handleSubmit(submit)}>
         <div

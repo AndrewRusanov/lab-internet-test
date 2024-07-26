@@ -4,7 +4,7 @@ import styles from "./HowItWorks.module.css";
 
 const HowItWorks = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="howItWorks">
       <h2 className={styles.title}>Как это работает</h2>
       <ul className={styles.infoList}>
         {HowItWorksList.map((item, index) => (

@@ -4,7 +4,7 @@ import styles from "./ThirdBlock.module.css";
 
 const ThirdBlock = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="thirdBlock">
       <div className={styles.thirdWrapper}>
         <h3 className={styles.title}>Круто, ты дошёл до третьего блока</h3>
         <article className={styles.infoContainer}>

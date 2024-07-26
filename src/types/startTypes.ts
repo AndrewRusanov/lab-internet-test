@@ -8,3 +8,8 @@ export enum navBarItems {
   "QA" = "Вопросы и ответы",
   "FORM" = "Форма",
 }
+
+export type NavBarLink = {
+  id: string;
+  text: string;
+};
