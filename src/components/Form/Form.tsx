@@ -5,6 +5,7 @@ import successCircle from "assets/images/successCircle.svg";
 import errorCircle from "assets/images/errorCircle.svg";
 
 import "./Form.css";
+import Icon from "UI/Icon";
 
 type TForm = {
   name: string;
@@ -105,15 +106,16 @@ const Form: FC = () => {
           <label className="placeholder">Телефон</label>
         </div>
 
-        <label className="checkbox">
+        <label className="customCheckbox">
           <input
             type="checkbox"
             checked={isChecked}
             onChange={handleCheckboxClick}
-            className="checkboxInput"
           />
-          <span className="checkmark"></span>
-          <span className="checkboxLabel">Я соглашаюсь</span>
+          <div className="checkbox">
+            <Icon.CheckMark />
+          </div>
+          <span>Я согласен</span>
         </label>
 
         <button

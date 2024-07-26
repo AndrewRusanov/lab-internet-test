@@ -18,7 +18,8 @@
 .form {
   display: flex;
   flex-direction: row;
-  gap: 64px;
+  align-items: center;
+  gap: 30px 64px;
   flex-wrap: wrap;
 }
 
@@ -108,74 +109,58 @@
   display: block;
 }
 
-.checkbox {
+.customCheckbox {
   display: flex;
-  align-items: center;
   cursor: pointer;
-  position: relative;
-  font-size: 16px;
-  user-select: none;
+  height: 24px;
 }
 
-.checkboxInput {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  height: 20px;
-  width: 20px;
-  background-color: var(--white);
-  border: 2px solid var(--mid-gray);
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.checkbox:hover .checkmark {
-  background-color: var(--extra-light-gray);
-}
-
-.checkboxInput:checked ~ .checkmark {
-  background-color: var(--primary);
-  border: 2px solid var(--primary);
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
+.customCheckbox input {
   display: none;
 }
 
-.checkboxInput:checked ~ .checkmark:after {
-  display: block;
+.checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--mid-gray);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.checkbox .checkmark:after {
-  left: 7px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid var(--white);
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+.checkbox > svg {
+  visibility: hidden;
 }
 
-.checkboxLabel {
-  margin-left: 30px;
+.customCheckbox input:checked ~ .checkbox {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.customCheckbox input:checked ~ .checkbox > svg {
+  cursor: pointer;
+  visibility: visible;
+}
+
+.customCheckbox span {
+  margin-left: 16px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  color: #000;
+  color: var(--black);
 }
 
 .button {
+  margin-left: auto;
   border: none;
   outline: none;
   text-align: center;
-  padding: 20px 40px;
+  padding: 20px 0;
+  width: 384px;
   border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
@@ -208,5 +193,47 @@
 
   .inputContainer {
     width: 320px;
+  }
+
+  .button {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 343px;
+  }
+
+  .title {
+    margin: 0 auto 30px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .form {
+    gap: 20px 0;
+  }
+
+  .inputContainer {
+    width: 313px;
+  }
+
+  .button {
+    width: 343px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .container {
+    max-width: 288px;
+  }
+
+  .inputContainer {
+    width: 252px;
+  }
+
+  .button {
+    width: 288px;
   }
 }
